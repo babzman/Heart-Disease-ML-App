@@ -1,4 +1,8 @@
-streamlit==0.65.2
-numpy==1.18.4
 pandas==1.0.3
+streamlit==0.65.2
+docutils==0.15.2
+pywin32==227
+numpy==1.18.4
+lxml==4.5.2
+jmespath==0.10.0
 Pillow==7.2.0
