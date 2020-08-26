@@ -18,7 +18,7 @@
     "mkdir -p ~/.streamlit/\n",
     "echo \"\\\n",
     "[general]\\n\\\n",
-    "email = \\\"babby833@gmail.com\\\"\\n\\\n",
+    "email = \\\"your@domain.com\\\"\\n\\\n",
     "\" > ~/.streamlit/credentials.toml\n",
     "echo \"\\\n",
     "[server]\\n\\\n",
