@@ -1,3 +1,4 @@
 pandas==1.0.3
 streamlit
 numpy==1.18.4
+skikit-learn==0.22.1
