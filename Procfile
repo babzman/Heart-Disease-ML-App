@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run Task4.py
+web: sh setup.sh && streamlit run T4.py
