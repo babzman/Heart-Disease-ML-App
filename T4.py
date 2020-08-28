@@ -36,10 +36,11 @@ def welcome():
 def gender(s):
     if type(s)==str:
         s=s.title()
-    if s=="Male" or s==1:
+    if s=="Male":
         return 1
-    if s=="Female" or s==0:
+    if s=="Female":
         return 0
+    return s
 
 
 # In[7]:
@@ -84,6 +85,7 @@ def main():
     ca=stm.text_input("ca","Type Here")
     thal=stm.text_input("thal","Type Here")
     result=""
+    sex=gender(sex)
     if stm.button("Predict"):
         result=prediction(age,sex,cp,trestbps,chol,fbs,restecg,thalang,exang,oldpeak,slope,ca,thal)
         result=disease(result)
