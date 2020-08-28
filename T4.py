@@ -89,7 +89,7 @@ def main():
     if stm.button("Predict"):
         result=prediction(age,sex,cp,trestbps,chol,fbs,restecg,thalang,exang,oldpeak,slope,ca,thal)
         r=disease(result)
-    stm.success("Result is "+str(result[0])+" - "+str(r))
+    stm.success("Result is "+str(result)+" - "+str(r))
     if stm.button("About"):
         stm.text("Lets Learn")
         stm.text("Built with Streamlit")
