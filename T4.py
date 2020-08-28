@@ -46,7 +46,7 @@ def gender(s):
 
 
 def prediction(age,sex,cp,trestbps,chol,fbs,restecg,thalang,exang,oldpeak,slope,ca,thal):
-    result=model.predict([[age,sex,cp,trestbps,chol,fbs,restecg,thalang,exang,oldpeak,slope,ca,thal]])
+    result=model.predict([[age,gender(sex),cp,trestbps,chol,fbs,restecg,thalang,exang,oldpeak,slope,ca,thal]])
     return result
 
 
@@ -85,7 +85,7 @@ def main():
     thal=stm.text_input("thal","Type Here")
     result=""
     if stm.button("Predict"):
-        result=prediction(age,gender(sex),cp,trestbps,chol,fbs,restecg,thalang,exang,oldpeak,slope,ca,thal)
+        result=prediction(age,sex,cp,trestbps,chol,fbs,restecg,thalang,exang,oldpeak,slope,ca,thal)
         result=disease(result)
     stm.success("Result is "+str(result))
     if stm.button("About"):
