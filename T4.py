@@ -35,9 +35,10 @@ def welcome():
 
 def gender(s):
     s=s.title()
-    if s=="Male":
+    if s=="Male" or s==1:
         return 1
-    return 0
+    elif s="Female" or s==0:
+        return 0
 
 
 # In[7]:
