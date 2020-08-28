@@ -46,7 +46,7 @@ def gender(s):
 
 
 def prediction(age,sex,cp,trestbps,chol,fbs,restecg,thalang,exang,oldpeak,slope,ca,thal):
-    result=model.predict([[age,gender(sex),cp,trestbps,chol,fbs,restecg,thalang,exang,oldpeak,slope,ca,thal]])
+    result=model.predict([[age,sex,cp,trestbps,chol,fbs,restecg,thalang,exang,oldpeak,slope,ca,thal]])
     return result
 
 
