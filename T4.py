@@ -85,6 +85,7 @@ def main():
     ca=stm.text_input("ca","Type Here")
     thal=stm.text_input("thal","Type Here")
     result=""
+    r=""
     sex=gender(sex)
     if stm.button("Predict"):
         result=prediction(age,sex,cp,trestbps,chol,fbs,restecg,thalang,exang,oldpeak,slope,ca,thal)
