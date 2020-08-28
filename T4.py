@@ -88,7 +88,7 @@ def main():
     sex=gender(sex)
     if stm.button("Predict"):
         result=prediction(age,sex,cp,trestbps,chol,fbs,restecg,thalang,exang,oldpeak,slope,ca,thal)
-        result=disease(result)
+        #result=disease(result)
     stm.success("Result is "+str(result))
     if stm.button("About"):
         stm.text("Lets Learn")
