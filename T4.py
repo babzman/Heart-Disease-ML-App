@@ -34,7 +34,8 @@ def welcome():
 
 
 def gender(s):
-    s=s.title()
+    if type(s)==str:
+        s=s.title()
     if s=="Male" or s==1:
         return 1
     elif s=="Female" or s==0:
@@ -98,9 +99,4 @@ def main():
 if __name__=="__main__":
     main()
 
-
-# In[20]:
-
-
-get_ipython().system('streamlit run Task4.py')
 
