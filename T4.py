@@ -38,7 +38,7 @@ def gender(s):
         s=s.title()
     if s=="Male" or s==1:
         return 1
-    elif s=="Female" or s==0:
+    if s=="Female" or s==0:
         return 0
 
 
